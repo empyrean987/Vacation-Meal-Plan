@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Week at Walt Disney World — Dinner Only</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #1f2420;
+    --muted: #5b6760;
+    --card: #ffffff;
+    --border: #e4ded4;
+    --accent: #8a5a3b;
+    --accent-bg: #f3e9df;
+    --warn-bg: #fbeee0;
+    --warn-border: #d9a473;
+    --danger-bg: #fbe4e0;
+    --danger-border: #c0392b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1b18;
+      --text: #ece8e1;
+      --muted: #a8a299;
+      --card: #242421;
+      --border: #3a3935;
+      --accent: #d9a473;
+      --accent-bg: #332a22;
+      --warn-bg: #3a2c1b;
+      --warn-border: #d9a473;
+      --danger-bg: #3a221e;
+      --danger-border: #e0665a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  .nav { margin-bottom: 1.2rem; font-size: 0.9rem; }
+  .nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .nav a:hover { text-decoration: underline; }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  .sub { color: var(--muted); margin-top: 0; margin-bottom: 1.5rem; }
+  .disclaimer, .warn, .danger {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+  .disclaimer { background: var(--accent-bg); }
+  .warn { background: var(--warn-bg); border-color: var(--warn-border); }
+  .danger { background: var(--danger-bg); border-color: var(--danger-border); margin-bottom: 1.5rem; }
+  .danger strong { color: var(--danger-border); }
+  .summary {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    flex: 1 1 160px;
+  }
+  .stat .n { font-size: 1.4rem; font-weight: 600; color: var(--accent); }
+  .stat .l { font-size: 0.8rem; color: var(--muted); }
+  .day {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 6px solid var(--park-color, var(--accent));
+    border-radius: 12px;
+    padding: 1.1rem 1.1rem 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .day.fast { border-left-color: var(--warn-border); }
+  .day h2 {
+    font-size: 1.15rem;
+    margin: 0 0 0.15rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .day .park { font-size: 0.82rem; font-weight: 600; color: var(--park-color, var(--accent)); margin-bottom: 0.7rem; }
+  .day h2 .tot { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  .tbl-wrap { overflow-x: auto; }
+  table.meals { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  table.meals th, table.meals td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); white-space: nowrap; vertical-align: top; }
+  table.meals td.food { white-space: normal; min-width: 200px; }
+  table.meals th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; }
+  tr.swim td { color: var(--accent); font-style: italic; }
+  .restaurant { font-weight: 600; }
+  .location { display: block; color: var(--muted); font-size: 0.78rem; font-weight: 400; }
+  footer { color: var(--muted); font-size: 0.85rem; margin-top: 2rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav"><a href="index.html">← Back to plan menu</a> · <a href="full-plan.html">View full 5-meals/day plan →</a></div>
+
+  <h1>🏰 A Week at Walt Disney World — Dinner Only</h1>
+  <p class="sub">Same itinerary, same restaurants — one meal a day (dinner only) + daily swim</p>
+
+  <div class="danger">
+    <strong>⚠️ Read before using this version:</strong> collapsing to one meal a day brings
+    average intake down to roughly <strong>~700&ndash;800 kcal/day and ~69g protein/day</strong>
+    on eating days &mdash; well under half of the full 5-meals/day plan. Sustained intake this
+    low is generally considered very-low-calorie-diet (VLCD) territory, which is normally only
+    done under direct physician supervision, GLP-1 medication or not. Eating a full day's food
+    in one large sitting also runs counter to standard Ozempic guidance (small, frequent meals,
+    because of delayed gastric emptying) &mdash; a single large dinner is the setup most likely
+    to cause real nausea or discomfort. <strong>Talk to whoever prescribes your Ozempic before
+    following this plan</strong>, not just a general disclaimer check-box.
+  </div>
+
+  <div class="disclaimer">
+    Same themed vacation itinerary as the full plan &mdash; home base at Disney's Polynesian
+    Village Resort, a different park each day. Restaurants confirmed open and operating as of
+    October 2026. <strong>Not medical or nutrition advice.</strong>
+  </div>
+
+  <div class="warn">
+    ⚠️ <strong>Thursday caution (unchanged):</strong> full fast + an hour of swimming — keep
+    effort light, swim with someone present, stop immediately if lightheaded.
+  </div>
+
+  <div class="summary">
+    <div class="stat"><div class="n">~811</div><div class="l">avg kcal / day (6 eating days)</div></div>
+    <div class="stat"><div class="n">~69g</div><div class="l">avg protein / day (6 eating days)</div></div>
+    <div class="stat"><div class="n">1 meal</div><div class="l">dinner only, 6:30 PM + swim 5&ndash;6 PM</div></div>
+  </div>
+
+  <div id="days"></div>
+
+  <footer>
+    Raw data: <a href="data/dinner-only.csv">data/dinner-only.csv</a> ·
+    Menu items are themed for the vacation narrative, not pulled from current actual menus.
+    Swim is scheduled as a planned activity only — not counted in any number here.
+  </footer>
+</div>
+
+<script>
+const parkColors = {
+  "Magic Kingdom": "#3b5a9a",
+  "EPCOT": "#009da5",
+  "Hollywood Studios": "#c0392b",
+  "Rest Day": "#d9a473",
+  "Animal Kingdom": "#4a7c3a",
+  "Disney Springs": "#8e44ad",
+  "Grand Floridian finale": "#b8860b"
+};
+
+const plan = [
+  ["Monday", "Magic Kingdom", 837, 70.5, false, [
+    ["5:00–6:00 PM","Swim","Contemporary Resort Pool","Disney's Contemporary Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","California Grill","Disney's Contemporary Resort","Filet mignon (8oz), baked potato (1 cup), white rice (¾ cup), cherry tomatoes (½ cup) — fireworks view",837,"70.5g"]
+  ]],
+  ["Tuesday", "EPCOT", 730, 61.5, false, [
+    ["5:00–6:00 PM","Swim","Stormalong Bay","Yacht & Beach Club Resorts","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Le Cellier Steakhouse","EPCOT, Canada Pavilion","Filet mignon (7oz), baked potato (¾ cup), white rice (¾ cup), cherry tomatoes (½ cup)",730,"61.5g"]
+  ]],
+  ["Wednesday", "Hollywood Studios", 837, 70.5, false, [
+    ["5:00–6:00 PM","Swim","Luna Park Pool","Disney's BoardWalk Inn","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Flying Fish","Disney's BoardWalk","Filet mignon (8oz), white rice (1 cup), baked potato (¾ cup), cherry tomatoes (½ cup)",837,"70.5g"]
+  ]],
+  ["Thursday", "Rest Day", 0, 0, true, [
+    ["All Day","Fast","Spa & Pool Day","Disney's Polynesian Village Resort","Water, black coffee/tea, electrolytes only — no food",0,"0g"],
+    ["5:00–6:00 PM","Swim ⚠️","Volcano Pool","Disney's Polynesian Village Resort","Planned activity — fasted day, see caution above",null,null]
+  ]],
+  ["Friday", "Animal Kingdom", 895, 77.5, false, [
+    ["5:00–6:00 PM","Swim","Uzima Springs Pool","Disney's Animal Kingdom Lodge","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Jiko – The Cooking Place","Disney's Animal Kingdom Lodge","Filet mignon (9oz), African-spiced potato (1 cup), rice pilaf (¾ cup), cherry tomatoes (½ cup)",895,"77.5g"]
+  ]],
+  ["Saturday", "Disney Springs", 837, 70.5, false, [
+    ["5:00–6:00 PM","Swim","Volcano Pool","Disney's Polynesian Village Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","The Boathouse","Disney Springs","Filet mignon (8oz), baked potato (1 cup), white rice (¾ cup), cherry tomatoes (½ cup)",837,"70.5g"]
+  ]],
+  ["Sunday", "Grand Floridian finale", 730, 61.5, false, [
+    ["5:00–6:00 PM","Swim","Beach Pool","Disney's Grand Floridian Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Narcoossee's","Disney's Grand Floridian Resort","Filet mignon (7oz), baked potato (¾ cup), white rice (¾ cup), cherry tomatoes (½ cup) — fireworks view",730,"61.5g"]
+  ]]
+];
+
+const el = document.getElementById("days");
+for (const [day, park, kcal, protein, isFast, meals] of plan) {
+  const card = document.createElement("div");
+  card.className = "day" + (isFast ? " fast" : "");
+  card.style.setProperty("--park-color", parkColors[park] || "#8a5a3b");
+  const rows = meals.map(([t,m,r,loc,f,c,p]) => {
+    const isSwim = m.toLowerCase().includes("swim");
+    return `<tr${isSwim ? ' class="swim"' : ''}>
+      <td>${t}</td>
+      <td>${m}</td>
+      <td><span class="restaurant">${r}</span><span class="location">${loc}</span></td>
+      <td class="food">${f}</td>
+      <td>${c===null?'—':c}</td>
+      <td>${p===null?'—':p}</td>
+    </tr>`;
+  }).join("");
+  const totLabel = isFast ? "FULL FAST — 0 kcal" : `${kcal} kcal / ${protein}g protein`;
+  card.innerHTML = `
+    <div class="park">${park}</div>
+    <h2>${day} <span class="tot">${totLabel}</span></h2>
+    <div class="tbl-wrap">
+      <table class="meals">
+        <thead><tr><th>Time</th><th>Meal</th><th>Restaurant</th><th>Food</th><th>Cal</th><th>Protein</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  el.appendChild(card);
+}
+</script>
+</body>
+</html>

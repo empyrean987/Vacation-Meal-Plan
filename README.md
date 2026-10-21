@@ -7,6 +7,16 @@ targets are consistent with the top 20–25% of clinical trial responders ("supe
 20%+ body weight loss over ~68–72 weeks per the STEP trials). All restaurants listed were
 confirmed open and operating as of October 2026.
 
+**Two versions, same itinerary:**
+- [`full-plan.html`](full-plan.html) — 5 meals/day (breakfast, 2 snacks, lunch, dinner). ~1,736
+  kcal/day, ~138g protein/day on eating days.
+- [`dinner-only.html`](dinner-only.html) — same restaurants, **one meal a day (dinner only)**.
+  ~811 kcal/day, ~69g protein/day on eating days. ⚠️ See that page's caution banner before
+  using — sustained intake this low is VLCD territory and a single large daily meal runs
+  counter to standard Ozempic guidance (delayed gastric emptying favors small, frequent meals).
+  Talk to the prescribing physician before following this version.
+- [`index.html`](index.html) — landing page linking to both.
+
 > **Not medical or nutrition advice.** Calorie/protein values are estimates, and specific menu
 > items are themed for the vacation narrative rather than pulled from current actual menus.
 > Confirm actual targets with a physician or registered dietitian, especially given use of a
