@@ -41,9 +41,12 @@
   .sub { color: var(--muted); margin-top: 0; margin-bottom: 2rem; }
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2rem;
     text-align: left;
+  }
+  @media (max-width: 900px) {
+    .cards { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 640px) {
     .cards { grid-template-columns: 1fr; }
@@ -95,6 +98,17 @@
         <span class="stat">~139g protein/day</span>
       </div>
       <div class="go">⚠️ See caution before using →</div>
+    </a>
+
+    <a class="card" href="womens-plan.html">
+      <div class="emoji">👤</div>
+      <h2>Second Traveler Plan</h2>
+      <p>Same restaurants &amp; itinerary, sized for a 150 lb, 5'3" traveler — 5 meals/day.</p>
+      <div class="stats">
+        <span class="stat">~1,324 kcal/day</span>
+        <span class="stat">~107g protein/day</span>
+      </div>
+      <div class="go">View the itinerary →</div>
     </a>
   </div>
 

@@ -17,7 +17,11 @@ confirmed open and operating as of October 2026.
   meal this large runs counter to standard Ozempic guidance (delayed gastric emptying favors
   small, frequent meals) and is a lot of food volume to eat in one sitting. Talk to the
   prescribing physician before following this version.
-- [`index.html`](index.html) — landing page linking to both.
+- [`womens-plan.html`](womens-plan.html) — same restaurants/itinerary/swim/Thursday fast, sized
+  for a 150 lb, 5'3" traveler on Ozempic. 5 meals/day, ~1,324 kcal/day, ~107g protein/day on
+  eating days (near the top of the 1.2-1.6g/kg GLP-1 muscle-preservation range for this body
+  weight). Assumptions: age ~40, lightly active, ~1,814 kcal/day maintenance.
+- [`index.html`](index.html) — landing page linking to all three.
 
 > **Not medical or nutrition advice.** Calorie/protein values are estimates, and specific menu
 > items are themed for the vacation narrative rather than pulled from current actual menus.

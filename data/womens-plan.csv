@@ -1,0 +1,39 @@
+Day,Time,Meal,Restaurant,Location,Food,Calories,Protein_g
+Monday,7:00 AM,Breakfast,The Crystal Palace,Magic Kingdom,"2 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup)",325,20.5
+Monday,10:00 AM,Snack,Liberty Square Market,Magic Kingdom,Cherry tomatoes (1 cup),30,1
+Monday,12:30 PM,Lunch,Skipper Canteen,Magic Kingdom,"Grilled steak (5oz), jungle rice (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Monday,3:30 PM,Snack,The Lunching Pad,Magic Kingdom,Potato chips (1oz, ~15 chips),150,2
+Monday,5:00 PM,Swim,Contemporary Resort Pool,Disney's Contemporary Resort,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Monday,6:30 PM,Dinner,California Grill,Disney's Contemporary Resort,"Grilled steak (5oz), baked potato (1/2 cup), cherry tomatoes (1/2 cup) - Magic Kingdom fireworks view",407,41.7
+Tuesday,7:00 AM,Breakfast,Garden Grill,EPCOT - The Land Pavilion,"2 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup)",325,20.5
+Tuesday,10:00 AM,Snack,Sunshine Seasons,EPCOT - The Land Pavilion,Potato chips (1oz),150,2
+Tuesday,12:30 PM,Lunch,La Hacienda de San Angel,EPCOT - Mexico Pavilion,"Carne asada steak (5oz), Mexican rice (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Tuesday,3:30 PM,Snack,World Showcase Kiosk,EPCOT,Cherry tomatoes (1 cup),30,1
+Tuesday,5:00 PM,Swim,Stormalong Bay,Disney's Yacht & Beach Club Resorts,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Tuesday,6:30 PM,Dinner,Le Cellier Steakhouse,EPCOT - Canada Pavilion,"Filet mignon (5oz), baked potato (1/2 cup), cherry tomatoes (1/2 cup)",407,41.7
+Wednesday,7:00 AM,Breakfast,Trattoria al Forno,Disney's BoardWalk,"2 eggs, 1 turkey sausage link, white rice (1/2 cup) - Bon Voyage Breakfast",328,20.5
+Wednesday,10:00 AM,Snack,Woody's Lunch Box,Disney's Hollywood Studios,Cherry tomatoes (1 cup),30,1
+Wednesday,12:30 PM,Lunch,The Hollywood Brown Derby,Disney's Hollywood Studios,"Cobb-style steak (5oz), baked potato (1/2 cup), signature cherry tomatoes (1/2 cup)",410,41.7
+Wednesday,3:30 PM,Snack,Rosie's All-American Cafe,Disney's Hollywood Studios,Potato chips (1oz),150,2
+Wednesday,5:00 PM,Swim,Luna Park Pool,Disney's BoardWalk Inn,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Wednesday,6:30 PM,Dinner,Flying Fish,Disney's BoardWalk,"Filet mignon (5oz), white rice (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Thursday,All Day,Fast,Spa & Pool Day,Disney's Polynesian Village Resort,"Water, black coffee/tea, electrolytes only - no food",0,0
+Thursday,5:00 PM,Swim,Volcano Pool,Disney's Polynesian Village Resort,"Swimming (planned activity, ~1 hr) - CAUTION: fasted day, keep effort light, swim with someone present, stop if lightheaded - not counted in calorie totals",,
+Friday,7:00 AM,Breakfast,Tusker House Restaurant,Animal Kingdom - Africa,"2 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup) - Donald's Dining Safari",325,20.5
+Friday,10:00 AM,Snack,Harambe Market,Animal Kingdom - Africa,Cherry tomatoes (1 cup),30,1
+Friday,12:30 PM,Lunch,Tiffins,Animal Kingdom,"Spiced beef tenderloin (4oz), rice pilaf (1/2 cup), cherry tomatoes (1/2 cup)",351,33.7
+Friday,3:30 PM,Snack,Pizzafari Snack Window,Animal Kingdom,Potato chips (1oz),150,2
+Friday,5:00 PM,Swim,Uzima Springs Pool,Disney's Animal Kingdom Lodge,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Friday,6:30 PM,Dinner,Jiko - The Cooking Place,Disney's Animal Kingdom Lodge,"Filet mignon (6oz), African-spiced potato (1/2 cup), cherry tomatoes (1/2 cup)",465,49.5
+Saturday,7:00 AM,Breakfast,'Ohana,Disney's Polynesian Village Resort,"2 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup) - Best Friends Breakfast",325,20.5
+Saturday,10:00 AM,Snack,The Polite Pig,Disney Springs,Potato chips (1oz),150,2
+Saturday,12:30 PM,Lunch,STK Orlando,Disney Springs,"Grilled steak (5oz), baked potato (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Saturday,3:30 PM,Snack,D-Luxe Burger,Disney Springs,Cherry tomatoes (1 cup),30,1
+Saturday,5:00 PM,Swim,Volcano Pool,Disney's Polynesian Village Resort,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Saturday,6:30 PM,Dinner,The Boathouse,Disney Springs,"Filet mignon (5oz), white rice (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Sunday,7:00 AM,Breakfast,1900 Park Fare,Disney's Grand Floridian Resort,"2 eggs, 1 turkey sausage link, white rice (1/2 cup)",328,20.5
+Sunday,10:00 AM,Snack,Gasparilla Island Grill,Disney's Grand Floridian Resort,Cherry tomatoes (1 cup),30,1
+Sunday,12:30 PM,Lunch,Kona Cafe,Disney's Polynesian Village Resort,"Grilled steak (5oz), jasmine rice (1/2 cup), cherry tomatoes (1/2 cup)",410,41.7
+Sunday,3:30 PM,Snack,Captain Cook's,Disney's Polynesian Village Resort,Potato chips (1oz),150,2
+Sunday,5:00 PM,Swim,Beach Pool,Disney's Grand Floridian Resort,Swimming (planned activity, ~1 hr) - not counted in calorie totals,,
+Sunday,6:30 PM,Dinner,Narcoossee's,Disney's Grand Floridian Resort,"Filet mignon (5oz), white rice (1/2 cup), cherry tomatoes (1/2 cup) - Magic Kingdom fireworks view",410,41.7

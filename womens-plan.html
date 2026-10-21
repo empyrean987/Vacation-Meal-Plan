@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Week at Walt Disney World — Second Traveler</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #1f2420;
+    --muted: #5b6760;
+    --card: #ffffff;
+    --border: #e4ded4;
+    --accent: #8a5a3b;
+    --accent-bg: #f3e9df;
+    --warn-bg: #fbeee0;
+    --warn-border: #d9a473;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1b18;
+      --text: #ece8e1;
+      --muted: #a8a299;
+      --card: #242421;
+      --border: #3a3935;
+      --accent: #d9a473;
+      --accent-bg: #332a22;
+      --warn-bg: #3a2c1b;
+      --warn-border: #d9a473;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  .nav { margin-bottom: 1.2rem; font-size: 0.9rem; }
+  .nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .nav a:hover { text-decoration: underline; }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  .sub { color: var(--muted); margin-top: 0; margin-bottom: 1.5rem; }
+  .disclaimer, .warn {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+  .disclaimer { background: var(--accent-bg); }
+  .warn { background: var(--warn-bg); border-color: var(--warn-border); margin-bottom: 1.5rem; }
+  .itinerary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+  }
+  .itinerary table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .itinerary th, .itinerary td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .itinerary th { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .summary {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    flex: 1 1 160px;
+  }
+  .stat .n { font-size: 1.4rem; font-weight: 600; color: var(--accent); }
+  .stat .l { font-size: 0.8rem; color: var(--muted); }
+  .day {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 6px solid var(--park-color, var(--accent));
+    border-radius: 12px;
+    padding: 1.1rem 1.1rem 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .day.fast { border-left-color: var(--warn-border); }
+  .day h2 {
+    font-size: 1.15rem;
+    margin: 0 0 0.15rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .day .park { font-size: 0.82rem; font-weight: 600; color: var(--park-color, var(--accent)); margin-bottom: 0.7rem; }
+  .day h2 .tot { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  .tbl-wrap { overflow-x: auto; }
+  table.meals { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  table.meals th, table.meals td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); white-space: nowrap; vertical-align: top; }
+  table.meals td.food { white-space: normal; min-width: 200px; }
+  table.meals th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; }
+  tr.swim td { color: var(--accent); font-style: italic; }
+  .restaurant { font-weight: 600; }
+  .location { display: block; color: var(--muted); font-size: 0.78rem; font-weight: 400; }
+  footer { color: var(--muted); font-size: 0.85rem; margin-top: 2rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav"><a href="index.html">← Back to plan menu</a> · <a href="full-plan.html">Full 5-meals/day plan →</a> · <a href="dinner-only.html">Dinner-only plan →</a></div>
+
+  <h1>🏰 A Week at Walt Disney World — Second Traveler</h1>
+  <p class="sub">Same itinerary, same restaurants — sized for a 150 lb, 5'3" traveler</p>
+
+  <div class="disclaimer">
+    Same themed vacation as the full plan — home base at Disney's Polynesian Village Resort, a
+    different park each day. Built for a 150&nbsp;lb, 5'3" woman on Ozempic (semaglutide),
+    targeting a more moderate deficit appropriate to a smaller frame (~1,324 kcal/day,
+    ~107g protein/day — near the top of the 1.2&ndash;1.6g/kg GLP-1 muscle-preservation range).
+    Assumptions: age ~40, lightly active (Mifflin-St Jeor estimate, ~1,814 kcal maintenance).
+    Restaurants confirmed open and operating as of October 2026.
+    <strong>Not medical or nutrition advice</strong> — confirm actual targets with a physician
+    or registered dietitian.
+  </div>
+
+  <div class="warn">
+    ⚠️ <strong>Thursday caution:</strong> full fast + an hour of swimming — keep effort light,
+    swim with someone present, stop immediately if lightheaded.
+  </div>
+
+  <div class="itinerary">
+    <table>
+      <thead><tr><th>Day</th><th>Park / Theme</th><th>Home Base Thread</th></tr></thead>
+      <tbody>
+        <tr><td>Monday</td><td>Magic Kingdom</td><td>Dinner at Contemporary Resort</td></tr>
+        <tr><td>Tuesday</td><td>EPCOT</td><td>Swim at Yacht &amp; Beach Club · Dinner in Canada Pavilion</td></tr>
+        <tr><td>Wednesday</td><td>Hollywood Studios</td><td>Breakfast &amp; swim at BoardWalk</td></tr>
+        <tr><td>Thursday</td><td>Rest Day — full fast</td><td>Polynesian pool day</td></tr>
+        <tr><td>Friday</td><td>Animal Kingdom</td><td>Dinner at Animal Kingdom Lodge</td></tr>
+        <tr><td>Saturday</td><td>Disney Springs</td><td>Breakfast at Polynesian ('Ohana)</td></tr>
+        <tr><td>Sunday</td><td>Grand Floridian finale</td><td>Lunch back at Polynesian (Kona Cafe)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="summary">
+    <div class="stat"><div class="n">~1,324</div><div class="l">avg kcal / day (6 eating days)</div></div>
+    <div class="stat"><div class="n">~107g</div><div class="l">avg protein / day (6 eating days)</div></div>
+    <div class="stat"><div class="n">1 hr</div><div class="l">swim, 5&ndash;6 PM daily (not counted in totals)</div></div>
+  </div>
+
+  <div id="days"></div>
+
+  <footer>
+    Raw data: <a href="data/womens-plan.csv">data/womens-plan.csv</a> ·
+    Menu items are themed for the vacation narrative, not pulled from current actual menus.
+    Swim is scheduled as a planned activity only — not added to or subtracted from any number
+    here. Potato chips kept to 1oz portions since fried/greasy foods can worsen GLP-1 GI effects.
+  </footer>
+</div>
+
+<script>
+const parkColors = {
+  "Magic Kingdom": "#3b5a9a",
+  "EPCOT": "#009da5",
+  "Hollywood Studios": "#c0392b",
+  "Rest Day": "#d9a473",
+  "Animal Kingdom": "#4a7c3a",
+  "Disney Springs": "#8e44ad",
+  "Grand Floridian finale": "#b8860b"
+};
+
+const plan = [
+  ["Monday", "Magic Kingdom", 1322, 106.9, false, [
+    ["7:00 AM","Breakfast","The Crystal Palace","Magic Kingdom","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup)",325,"20.5g"],
+    ["10:00 AM","Snack","Liberty Square Market","Magic Kingdom","Cherry tomatoes (1 cup)",30,"1g"],
+    ["12:30 PM","Lunch","Skipper Canteen","Magic Kingdom","Grilled steak (5oz), jungle rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","The Lunching Pad","Magic Kingdom","Potato chips (1oz)",150,"2g"],
+    ["5:00–6:00 PM","Swim","Contemporary Resort Pool","Disney's Contemporary Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","California Grill","Disney's Contemporary Resort","Grilled steak (5oz), baked potato (½ cup), cherry tomatoes (½ cup) — fireworks view",407,"41.7g"]
+  ]],
+  ["Tuesday", "EPCOT", 1322, 106.9, false, [
+    ["7:00 AM","Breakfast","Garden Grill","EPCOT, The Land","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup)",325,"20.5g"],
+    ["10:00 AM","Snack","Sunshine Seasons","EPCOT, The Land","Potato chips (1oz)",150,"2g"],
+    ["12:30 PM","Lunch","La Hacienda de San Angel","EPCOT, Mexico Pavilion","Carne asada steak (5oz), Mexican rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","World Showcase Kiosk","EPCOT","Cherry tomatoes (1 cup)",30,"1g"],
+    ["5:00–6:00 PM","Swim","Stormalong Bay","Yacht & Beach Club Resorts","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Le Cellier Steakhouse","EPCOT, Canada Pavilion","Filet mignon (5oz), baked potato (½ cup), cherry tomatoes (½ cup)",407,"41.7g"]
+  ]],
+  ["Wednesday", "Hollywood Studios", 1328, 106.9, false, [
+    ["7:00 AM","Breakfast","Trattoria al Forno","Disney's BoardWalk","2 eggs, 1 turkey sausage link, white rice (½ cup) — Bon Voyage Breakfast",328,"20.5g"],
+    ["10:00 AM","Snack","Woody's Lunch Box","Hollywood Studios","Cherry tomatoes (1 cup)",30,"1g"],
+    ["12:30 PM","Lunch","The Hollywood Brown Derby","Hollywood Studios","Cobb-style steak (5oz), baked potato (½ cup), signature cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","Rosie's All-American Cafe","Hollywood Studios","Potato chips (1oz)",150,"2g"],
+    ["5:00–6:00 PM","Swim","Luna Park Pool","Disney's BoardWalk Inn","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Flying Fish","Disney's BoardWalk","Filet mignon (5oz), white rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"]
+  ]],
+  ["Thursday", "Rest Day", 0, 0, true, [
+    ["All Day","Fast","Spa & Pool Day","Disney's Polynesian Village Resort","Water, black coffee/tea, electrolytes only — no food",0,"0g"],
+    ["5:00–6:00 PM","Swim ⚠️","Volcano Pool","Disney's Polynesian Village Resort","Planned activity — fasted day, see caution above",null,null]
+  ]],
+  ["Friday", "Animal Kingdom", 1321, 106.7, false, [
+    ["7:00 AM","Breakfast","Tusker House Restaurant","Animal Kingdom, Africa","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup) — Donald's Dining Safari",325,"20.5g"],
+    ["10:00 AM","Snack","Harambe Market","Animal Kingdom, Africa","Cherry tomatoes (1 cup)",30,"1g"],
+    ["12:30 PM","Lunch","Tiffins","Animal Kingdom","Spiced beef tenderloin (4oz), rice pilaf (½ cup), cherry tomatoes (½ cup)",351,"33.7g"],
+    ["3:30 PM","Snack","Pizzafari Snack Window","Animal Kingdom","Potato chips (1oz)",150,"2g"],
+    ["5:00–6:00 PM","Swim","Uzima Springs Pool","Disney's Animal Kingdom Lodge","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Jiko – The Cooking Place","Disney's Animal Kingdom Lodge","Filet mignon (6oz), African-spiced potato (½ cup), cherry tomatoes (½ cup)",465,"49.5g"]
+  ]],
+  ["Saturday", "Disney Springs", 1325, 106.9, false, [
+    ["7:00 AM","Breakfast","'Ohana","Disney's Polynesian Village Resort","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup) — Best Friends Breakfast",325,"20.5g"],
+    ["10:00 AM","Snack","The Polite Pig","Disney Springs","Potato chips (1oz)",150,"2g"],
+    ["12:30 PM","Lunch","STK Orlando","Disney Springs","Grilled steak (5oz), baked potato (½ cup), cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","D-Luxe Burger","Disney Springs","Cherry tomatoes (1 cup)",30,"1g"],
+    ["5:00–6:00 PM","Swim","Volcano Pool","Disney's Polynesian Village Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","The Boathouse","Disney Springs","Filet mignon (5oz), white rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"]
+  ]],
+  ["Sunday", "Grand Floridian finale", 1328, 106.9, false, [
+    ["7:00 AM","Breakfast","1900 Park Fare","Disney's Grand Floridian Resort","2 eggs, 1 turkey sausage link, white rice (½ cup)",328,"20.5g"],
+    ["10:00 AM","Snack","Gasparilla Island Grill","Disney's Grand Floridian Resort","Cherry tomatoes (1 cup)",30,"1g"],
+    ["12:30 PM","Lunch","Kona Cafe","Disney's Polynesian Village Resort","Grilled steak (5oz), jasmine rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","Captain Cook's","Disney's Polynesian Village Resort","Potato chips (1oz)",150,"2g"],
+    ["5:00–6:00 PM","Swim","Beach Pool","Disney's Grand Floridian Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","Narcoossee's","Disney's Grand Floridian Resort","Filet mignon (5oz), white rice (½ cup), cherry tomatoes (½ cup) — fireworks view",410,"41.7g"]
+  ]]
+];
+
+const el = document.getElementById("days");
+for (const [day, park, kcal, protein, isFast, meals] of plan) {
+  const card = document.createElement("div");
+  card.className = "day" + (isFast ? " fast" : "");
+  card.style.setProperty("--park-color", parkColors[park] || "#8a5a3b");
+  const rows = meals.map(([t,m,r,loc,f,c,p]) => {
+    const isSwim = m.toLowerCase().includes("swim");
+    return `<tr${isSwim ? ' class="swim"' : ''}>
+      <td>${t}</td>
+      <td>${m}</td>
+      <td><span class="restaurant">${r}</span><span class="location">${loc}</span></td>
+      <td class="food">${f}</td>
+      <td>${c===null?'—':c}</td>
+      <td>${p===null?'—':p}</td>
+    </tr>`;
+  }).join("");
+  const totLabel = isFast ? "FULL FAST — 0 kcal" : `${kcal} kcal / ${protein}g protein`;
+  card.innerHTML = `
+    <div class="park">${park}</div>
+    <h2>${day} <span class="tot">${totLabel}</span></h2>
+    <div class="tbl-wrap">
+      <table class="meals">
+        <thead><tr><th>Time</th><th>Meal</th><th>Restaurant</th><th>Food</th><th>Cal</th><th>Protein</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  el.appendChild(card);
+}
+</script>
+</body>
+</html>
