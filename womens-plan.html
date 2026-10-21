@@ -129,11 +129,6 @@
     or registered dietitian.
   </div>
 
-  <div class="warn">
-    ⚠️ <strong>Thursday caution:</strong> full fast + an hour of swimming — keep effort light,
-    swim with someone present, stop immediately if lightheaded.
-  </div>
-
   <div class="itinerary">
     <table>
       <thead><tr><th>Day</th><th>Park / Theme</th><th>Home Base Thread</th></tr></thead>
@@ -141,7 +136,7 @@
         <tr><td>Monday</td><td>Magic Kingdom</td><td>Dinner at Contemporary Resort</td></tr>
         <tr><td>Tuesday</td><td>EPCOT</td><td>Swim at Yacht &amp; Beach Club · Dinner in Canada Pavilion</td></tr>
         <tr><td>Wednesday</td><td>Hollywood Studios</td><td>Breakfast &amp; swim at BoardWalk</td></tr>
-        <tr><td>Thursday</td><td>Rest Day — full fast</td><td>Polynesian pool day</td></tr>
+        <tr><td>Thursday</td><td>Rest Day</td><td>Polynesian pool day</td></tr>
         <tr><td>Friday</td><td>Animal Kingdom</td><td>Dinner at Animal Kingdom Lodge</td></tr>
         <tr><td>Saturday</td><td>Disney Springs</td><td>Breakfast at Polynesian ('Ohana)</td></tr>
         <tr><td>Sunday</td><td>Grand Floridian finale</td><td>Lunch back at Polynesian (Kona Cafe)</td></tr>
@@ -150,8 +145,8 @@
   </div>
 
   <div class="summary">
-    <div class="stat"><div class="n">~1,324</div><div class="l">avg kcal / day (6 eating days)</div></div>
-    <div class="stat"><div class="n">~107g</div><div class="l">avg protein / day (6 eating days)</div></div>
+    <div class="stat"><div class="n">~1,324</div><div class="l">avg kcal / day (7-day avg, no fasting)</div></div>
+    <div class="stat"><div class="n">~107g</div><div class="l">avg protein / day (7-day avg)</div></div>
     <div class="stat"><div class="n">1 hr</div><div class="l">swim, 5&ndash;6 PM daily (not counted in totals)</div></div>
   </div>
 
@@ -201,9 +196,13 @@ const plan = [
     ["5:00–6:00 PM","Swim","Luna Park Pool","Disney's BoardWalk Inn","Planned activity, ~1 hr",null,null],
     ["6:30 PM","Dinner","Flying Fish","Disney's BoardWalk","Filet mignon (5oz), white rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"]
   ]],
-  ["Thursday", "Rest Day", 0, 0, true, [
-    ["All Day","Fast","Spa & Pool Day","Disney's Polynesian Village Resort","Water, black coffee/tea, electrolytes only — no food",0,"0g"],
-    ["5:00–6:00 PM","Swim ⚠️","Volcano Pool","Disney's Polynesian Village Resort","Planned activity — fasted day, see caution above",null,null]
+  ["Thursday", "Rest Day", 1325, 106.9, false, [
+    ["7:00 AM","Breakfast","Capt Cook's","Disney's Polynesian Village Resort","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup)",325,"20.5g"],
+    ["10:00 AM","Snack","Pineapple Lanai","Disney's Polynesian Village Resort","Cherry tomatoes (1 cup)",30,"1g"],
+    ["12:30 PM","Lunch","Trader Sam's Grog Grotto","Disney's Polynesian Village Resort","Grilled steak (5oz), white rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"],
+    ["3:30 PM","Snack","Barefoot Pool Bar","Disney's Polynesian Village Resort","Potato chips (1oz)",150,"2g"],
+    ["5:00–6:00 PM","Swim","Volcano Pool","Disney's Polynesian Village Resort","Planned activity, ~1 hr",null,null],
+    ["6:30 PM","Dinner","'Ohana","Disney's Polynesian Village Resort","Filet mignon (5oz), white rice (½ cup), cherry tomatoes (½ cup)",410,"41.7g"]
   ]],
   ["Friday", "Animal Kingdom", 1321, 106.7, false, [
     ["7:00 AM","Breakfast","Tusker House Restaurant","Animal Kingdom, Africa","2 eggs, 1 turkey sausage link, roasted potatoes (½ cup) — Donald's Dining Safari",325,"20.5g"],
