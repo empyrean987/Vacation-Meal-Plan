@@ -11,10 +11,12 @@ confirmed open and operating as of October 2026.
 - [`full-plan.html`](full-plan.html) — 5 meals/day (breakfast, 2 snacks, lunch, dinner). ~1,736
   kcal/day, ~138g protein/day on eating days.
 - [`dinner-only.html`](dinner-only.html) — same restaurants, **one meal a day (dinner only)**.
-  ~811 kcal/day, ~69g protein/day on eating days. ⚠️ See that page's caution banner before
-  using — sustained intake this low is VLCD territory and a single large daily meal runs
-  counter to standard Ozempic guidance (delayed gastric emptying favors small, frequent meals).
-  Talk to the prescribing physician before following this version.
+  Each dinner (16-17oz steak + doubled sides) is sized to match that day's original protein
+  target — ~1,489 kcal/day, ~139g protein/day on eating days, close to the full plan's protein
+  though somewhat under its calories. ⚠️ See that page's caution banner before using — a single
+  meal this large runs counter to standard Ozempic guidance (delayed gastric emptying favors
+  small, frequent meals) and is a lot of food volume to eat in one sitting. Talk to the
+  prescribing physician before following this version.
 - [`index.html`](index.html) — landing page linking to both.
 
 > **Not medical or nutrition advice.** Calorie/protein values are estimates, and specific menu
