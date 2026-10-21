@@ -1,0 +1,36 @@
+Day,Time,Meal,Food,Calories,Protein_g
+Monday,7:00 AM,Breakfast,"2 eggs, 2 turkey sausage links, roasted potatoes (3/4 cup)",460,28
+Monday,10:00 AM,Snack,Cherry tomatoes (1 cup),30,1
+Monday,12:30 PM,Lunch,"Grilled sirloin steak (6oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",520,50.5
+Monday,3:30 PM,Snack,Potato chips (1oz, ~15 chips),150,2
+Monday,6:30 PM,Dinner,"Grilled sirloin steak (6oz), baked potato (1 cup), cherry tomatoes (1/2 cup)",565,51.5
+Tuesday,7:00 AM,Breakfast,"3 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup)",395,26.5
+Tuesday,10:00 AM,Snack,Potato chips (1oz),150,2
+Tuesday,12:30 PM,Lunch,"Sirloin steak (6oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",520,50.5
+Tuesday,3:30 PM,Snack,Cherry tomatoes (1 cup),30,1
+Tuesday,6:30 PM,Dinner,"Sirloin steak (7oz), baked potato (3/4 cup), cherry tomatoes (1/2 cup)",575,58.5
+Wednesday,7:00 AM,Breakfast,"2 eggs, 2 turkey sausage links, white rice (3/4 cup)",465,28
+Wednesday,10:00 AM,Snack,Cherry tomatoes (1 cup),30,1
+Wednesday,12:30 PM,Lunch,"Sirloin steak (7oz), baked potato (1 cup), cherry tomatoes (1/2 cup)",625,59.5
+Wednesday,3:30 PM,Snack,Potato chips (1oz),150,2
+Wednesday,6:30 PM,Dinner,"Sirloin steak (6oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",520,50.5
+Thursday,7:00 AM,Breakfast,"3 eggs, 2 turkey sausage links, roasted potatoes (1/2 cup)",480,33
+Thursday,10:00 AM,Snack,Potato chips (1oz),150,2
+Thursday,12:30 PM,Lunch,"Sirloin steak (6oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",520,50.5
+Thursday,3:30 PM,Snack,Cherry tomatoes (1 cup),30,1
+Thursday,6:30 PM,Dinner,"Sirloin steak (6oz), baked potato (1 cup), cherry tomatoes (1/2 cup)",565,51.5
+Friday,7:00 AM,Breakfast,"2 eggs, 2 turkey sausage links, roasted potatoes (3/4 cup)",460,28
+Friday,10:00 AM,Snack,Cherry tomatoes (1 cup),30,1
+Friday,12:30 PM,Lunch,"Sirloin steak (5oz), white rice (1 cup), cherry tomatoes (1/2 cup)",510,43.5
+Friday,3:30 PM,Snack,Potato chips (1oz),150,2
+Friday,6:30 PM,Dinner,"Sirloin steak (8oz), baked potato (1 cup), cherry tomatoes (1/2 cup)",682,67.5
+Saturday,7:00 AM,Breakfast,"3 eggs, 1 turkey sausage link, roasted potatoes (1/2 cup)",395,26.5
+Saturday,10:00 AM,Snack,Potato chips (1oz),150,2
+Saturday,12:30 PM,Lunch,"Sirloin steak (6oz), baked potato (3/4 cup), cherry tomatoes (1/2 cup)",515,50.5
+Saturday,3:30 PM,Snack,Cherry tomatoes (1 cup),30,1
+Saturday,6:30 PM,Dinner,"Sirloin steak (7oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",580,58.5
+Sunday,7:00 AM,Breakfast,"2 eggs, 2 turkey sausage links, white rice (3/4 cup)",465,28
+Sunday,10:00 AM,Snack,Cherry tomatoes (1 cup),30,1
+Sunday,12:30 PM,Lunch,"Sirloin steak (6oz), baked potato (1 cup), cherry tomatoes (1/2 cup)",565,51.5
+Sunday,3:30 PM,Snack,Potato chips (1oz),150,2
+Sunday,6:30 PM,Dinner,"Sirloin steak (6oz), white rice (3/4 cup), cherry tomatoes (1/2 cup)",520,50.5
